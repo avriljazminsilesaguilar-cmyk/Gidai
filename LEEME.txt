@@ -1,0 +1,18 @@
+AGENDARLO ESCOLAR ANTOFAGASTA — APP INSTALABLE
+
+Archivos:
+- index.html: la agenda
+- manifest.webmanifest: nombre e iconos de la app
+- service-worker.js: caché/offline básico y manejo de notificaciones
+- icons/: iconos de instalación
+
+PARA INSTALAR EN ANDROID:
+1. Publica el contenido completo de esta carpeta en un hosting HTTPS (por ejemplo, GitHub Pages).
+2. Abre la URL HTTPS en Chrome.
+3. Pulsa “Instalar app” o menú ⋮ > Instalar aplicación.
+4. Pulsa “Activar notificaciones” y permite los avisos.
+
+IMPORTANTE:
+- No basta con abrir index.html como archivo local: los navegadores bloquean service workers y notificaciones en archivos locales.
+- El paquete incluye notificaciones de prueba y preparación PWA. Para enviar recordatorios automáticos con la app cerrada en horarios programados, se necesita un servicio de push/notificaciones en un servidor; esta carpeta por sí sola no puede enviar notificaciones remotas programadas.
+- Los modelos externos de animales, si los hubiera, necesitan internet.
